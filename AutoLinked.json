@@ -1,0 +1,2297 @@
+{
+  "name": "AutoLinked",
+  "nodes": [
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=* here are the five topics{{ $json.message.content['post 1'] }},{{ $json.message.content['post 2'] }},{{ $json.message.content['post 3'] }},{{ $json.message.content['post 4'] }} and {{ $json.message.content['post 5'] }} that i have selected to revolve around the input {{ $('On form submission').item.json.Controversial}}, select one from the above 5 paragraphs and create post using that one.\n\n#Must Rules to follow - \n* must leave 2 lines gaps to after the hook always.\n* your post should include some numbers.\n* should include some links to make the information verifiable.\n* this post is to help people with ai, tech or corporate jobs.\n* Always name the output: post\n* No multiple subheadings\n* Never include template brackets or explanations or **.\n* Never exceed 420 words\n* use emojis\n* Never break the LinkedIn paragraph format\n* Always use a real quote + hashtags at the end\n* Always end with “Did you know?” + surprising fact\n* Always sound like a human — not robotic\n* must leave 2 lines gaps to after the hook always.\n* must have good hasgtags related to the topic.\n* don't use ** or * to bold someting, no bold letters\n* in the end use a quote related to the post and a random fact of related issue or title given.\n* in the give them a reason why i am speaking on this topic by giving them something from achievement sheets that validates me.\n* no multiple sub heading\n* give me only content not any heading nor sub heading and name it \"post\" always\n* keep the always condition their like\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* should have some numbers and links to the articles.\n* Do not state Prabhanshu’s personal opinion. Instead, present the key facts and multiple perspectives, then imply an invitation for the audience to share their own views.\n* Pull any extra context or up‑to‑date insights from public internet sources as needed.\n* warning - if you think this is not suitable for any topic you can create your own structure but always \"promise of payoff\" in the post.\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n\ndon't mention what the input is, just create post on it.input is =={{ $('On form submission').item.json.Controversial }}\n\nResources(go through the full sheet and then reply) - \n#1 - Framework sheet to get frameworks.\n2 - hooks sheet to select most cathy hook in 8-10 words(must leave 2 lines gaps to after the hook always.).\n3 - use cta sheet to find best cta to put in end of the post.\n4 - achievements sheets have all my acheivement.\n\n#your sources of information can come from the below.\n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\n\n## Example Workflow:|\n1) Receive a topic (e.g., \"The ROI of warehouse automation\")\n2) Use Tavily to search and gather recent information or case studies\n3) Draft a LinkedIn post using that research\n4) Format it with source citations, clean structure, optional hashtags, and a call to action\n\nRestrictions:\n* don't give a generic post with no value, should have some numbers and links to the articles.\n* always do #important first and then move on to the rest of the prompts.\n* never include \"**\" this in output.\n\n#my achievements\nOrganic Views Generated\t20,000,000+\tClients (Various Platforms)\tOverall\tHigh visibility and reach\t\nOrganic Views Gained\t250,000+\tInstagram (Personal Page)\t1 Month\t2,000+ Organic Followers\t\nSubscribers Generated\t20,000+\tYouTube\tOngoing\tStrong subscriber growth\t\nOrganic Views on Videos\t200,000+\tYouTube\tOngoing\tIncreased engagement and brand awareness\t\nWebsites Designed\tMultiple\tWeb Design Projects\tVarious\tImproved sales performance\t\n\n#Hooks to use \n📚 Education Hooks\n1. This is how to (industry tip/hack) in under 60 seconds\n2. Next time you do X and you want (dream result) do this immediately before/during/after\n3. Here is a (industry) hack that most people don't know about\n4. Have you ever wondered how to get (dream result)? Don’t worry I won’t gatekeep — here’s exactly how\n5. Unethical ways to get (dream result)\n6. Here is a (industry) hack I bet you didn’t know, I kind of wanted to gate-keep this but screw it I am feeling generous\n7. This video will make/teach you more than a 4-year (industry) degree\n8. I made 10x more X when I put all my effort towards X\n9. The greatest X of our generation said (valuable industry advice)\n10. I have made/done/grown (desired result) — here are 3 things I wish I knew earlier\n🧠 Myths Hooks\n1. You’re being brainwashed into believing this (industry myth)\n2. If I had a dollar for every time I saw someone falling for (industry myth) I’d be rich\n3. Why (popular industry belief) is complete BS\n4. The oldest lady to ever live drank and smoked until she was 116 — if you think you have to be perfect to achieve X, you’re wrong\n5. Not seeing (dream result)? You’re probably falling for this common (industry) myth\n6. Here are 5 common myths popular (niche) influencers want you to believe\n7. Here are the top (number) (industry) myths ruining your chances of success\n8. If you're doing (industry myth), you’ll never achieve (dream result) — here’s why\n9. Controversial truth about (industry) myth — e.g., bananas make you fat\n10. Remember when your parents said (industry myth)? They were lying to you\n11. Doing (industry myth) is like taking advice from someone who was divorced 7 times — it won’t help you\n🛠️ Step-by-Step Systems Hooks\n1. I charge my clients $X–$X per year — here’s my favorite (industry strategy)\n2. This is how to (industry task) in under 60 seconds\n3. What should you do if you want (industry result) in (timeframe)?\n4. X is overrated — here’s what actually gets (dream result)\n5. Here’s how to double, triple, or 10x your (result) in 3 steps\n6. I’m going to show you how to hack X in 30 seconds\n7. I should be charging for what I’m about to tell you\n8. The top ?’s of (avatar) do this\n9. Here’s how to get (result) in X steps\n10. This is your sign to finally start X — here are the first X steps\n⚠️ Common Mistakes Hooks\n1. If you're stuck at (pain point) and want (result), stop doing this (mistake)\n2. You need to stop (industry task) — at least until you do this one thing\n3. (Industry mistake) is destroying your (dream result)\n4. You’re throwing (results) in the trash if you’re doing this\n5. Stop making this mistake or your mother-in-law will hate you more\n6. Here are 3 mistakes newbies make that you should avoid\n7. You need to (fix mistake) — the gurus are wrong\n8. (Mistake) is like bringing a knife to a gunfight — you’ll lose\n9. You’d see better results if you fixed this one common mistake\n10. Making this mistake is like trying to get fit eating junk — doesn’t work\n🧍 Authority Hooks\n1. This week/month/year I achieved (result) using this method\n2. This strategy helped me achieve (result) in X days — here’s how\n3. I have done 291,200 (tasks) in the last decade — this works\n4. I went from X to X in X (time) — here’s how you can too\n5. I took my client from X to X in X (time) — here’s the exact method\n6. Steal my strategy to get (ideal client result)\n7. I’m going to show you how I did this for my client in under 1 hour\n8. If you had (problem) and hired me, these are the 3 things I’d do\n9. I’ve worked with over X clients — here’s how I get results\n10. Take it from someone with X years in the industry — this is the best way\n\n#Cta\nDiscussion\tWhat’s your take on this? I’d love to hear your perspective.\nDiscussion\tHave you experienced something similar? Let’s talk in the comments.\nDiscussion\tCurious to know—do you agree or would you approach it differently?\nDiscussion\tWhich one of these have you seen happen most often?\nDiscussion\tWhere do you think most people go wrong here?\n\t\nConnection\tIf this resonated, let’s connect and share insights.\nConnection\tI’m always open to exchanging ideas—DMs are open.\nConnection\tWorking on something similar? Let’s collaborate.\nConnection\tIf this aligns with your work, let’s talk.\nConnection\tHelping teams solve problems like this—feel free to reach out.\n\t\nAction-Oriented\tSave this for when you need it most.\nAction-Oriented\tIf you’re planning to try this—start with step 1 today.\nAction-Oriented\tUse this as a checklist in your next project.\nAction-Oriented\tImplement this once and see how it changes your outcomes.\nAction-Oriented\tHere’s your framework—don’t let it stay theoretical.\n\t\nInsightful Close\tThere’s more nuance to this than a post can cover—happy to dive deeper if needed.\nInsightful Close\tThis is just one angle—what would you add to this?\nInsightful Close\tReal change starts with small shifts like this.\nInsightful Close\tSometimes the most effective strategies are also the simplest.\nInsightful Close\tThis is what worked for me—your mileage may vary, but the lesson holds.\n\n\n## Output Instructions:\n-Your ONLY output should be the final LinkedIn post text.\n- Do not include explanations, notes, or anything beyond the post itself.\n- give the output with suitable verifiable numbers and links of sources attached in your para so  that we can validate it.\n\nif can't access sheets, create your own data that have proven to go viral using the hooks and cta provided. "
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1160,
+        1100
+      ],
+      "id": "ed58ccfa-0ac8-4820-9f05-e2b797a5e0c0",
+      "name": "Controversial Post creator ",
+      "credentials": {
+        "openAiApi": {
+          "id": "K3GAPPdmjuYI9Mj4",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=create 5 brief trending things for strictly on this input {{ $('On form submission').item.json.Controversial }} only  related to ai or corporate or tech(between 1970-2025).\n\nyour research should be relatable for the date {{ $now }}.\n\nThe post should always be realted to ai,tech or corporate jobs.\n\nThink deep and research and reason.\n\n\nyour sources of information can come from \n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\nno multiple sub heading and \n\nAlways begin by conducting a real-time search using the Tavily tool to gather the most accurate, up-to-date information on the topic. The post should be written to appeal to the provided target audience.\nBased on your research, generate a well-structured LinkedIn post that: - Starts with an engaging hook\n- Professional in tone\n- Clear and easy to read\nEducational and insightful\n- Light on emojis (use only when highly relevant and minimal)\n- Includes proper source attribution (e.g., \"according to [source]\")\n\ngive me only content not any heading nor sub heading and name it \"post\" always\n\nkeep the always condition their like\n\"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n\n\ncreate 5 brief trending things for strictly on this input only {{ $('On form submission').item.json.Controversial }}.\ndon't attach links.\n\noutput must have 5 things.\n\"post\" always\nword limit 40 words(include detailed verifiable numbers brief about the topic).\nand the other subtopics shoud be named \"post 1\",\"post 2\",\"post 3\",\"post 4\",\"post 5\".."
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        780,
+        1100
+      ],
+      "id": "7de0be7f-464f-4f91-9af5-d6c318f69100",
+      "name": "controversial topic",
+      "credentials": {
+        "openAiApi": {
+          "id": "Xw6Z972WrQ0odb7Q",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3460,
+        1100
+      ],
+      "id": "849d2f35-17d1-4a7c-a7db-0702e82afe53",
+      "name": "Google Drive1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/ugcPosts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"author\": \"urn:li:person:{{ $('HTTP Request').item.json.body.sub }}\",\n  \"lifecycleState\": \"PUBLISHED\",\n  \"specificContent\": {\n    \"com.linkedin.ugc.ShareContent\": {\n      \"shareCommentary\": {\n        \"text\": {{ JSON.stringify($('Google Sheets').item.json.Posts) }}\n      },\n      \"shareMediaCategory\": \"IMAGE\",\n      \"media\": [\n        {\n          \"status\": \"READY\",\n          \"media\": \"{{ $('HTTP Request5').item.json.value.asset }}\"\n        }\n      ]\n    }\n  },\n  \"visibility\": {\n    \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n  }\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4560,
+        1100
+      ],
+      "id": "5b8615db-8f35-49a0-b31f-8992f88e5027",
+      "name": "HTTP Request3",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/assets",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "action",
+              "value": "registerUpload"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"registerUploadRequest\": {\n    \"recipes\": [\n      \"urn:li:digitalmediaRecipe:feedshare-image\"\n    ],\n    \"owner\": \"urn:li:person:qG98t6DaPa\",\n    \"serviceRelationships\": [\n      {\n        \"relationshipType\": \"OWNER\",\n        \"identifier\": \"urn:li:userGeneratedContent\"\n      }\n    ]\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3680,
+        1100
+      ],
+      "id": "c6b712e2-5c1c-4aa5-8943-066994b56607",
+      "name": "HTTP Request5",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('HTTP Request5').item.json.value.uploadMechanism['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest'].uploadUrl }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4340,
+        1100
+      ],
+      "id": "a3f1c60a-5a32-47b3-9bea-7baa3afb7098",
+      "name": "HTTP Request4",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Google Drive').item.json.webContentLink }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4120,
+        1100
+      ],
+      "id": "074505f1-9e19-4d27-82e4-4d80072e807b",
+      "name": "Donwload Image1",
+      "alwaysOutputData": false,
+      "notesInFlow": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "name": "=n8n - {{ $now }}",
+        "driveId": {
+          "__rl": true,
+          "value": "My Drive",
+          "mode": "list",
+          "cachedResultName": "My Drive",
+          "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1_04k9bn10fSwgshbd-441wu3YQmJ90oZ",
+          "mode": "list",
+          "cachedResultName": "n8n",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1_04k9bn10fSwgshbd-441wu3YQmJ90oZ"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3240,
+        1100
+      ],
+      "id": "fe887469-ecd3-48d9-9f8b-21d06626f256",
+      "name": "Google Drive",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=think deep about this input {{ $('Google Sheets').item.json.Posts }} and create a image using the following prompt.\n\n#Important(input == {{ $('On form submission').item.json.Controversial }})\nFirst and foremost determine these Important part -\n\nfrom the above you can take inspiration and can prompt on these using resources in documents provided.\n\n\n🎥 First-Person POV Image & Video Prompt Generator\n\n(Single Input → Unified Output)\n\n📌 Task:\nYou are an advanced AI specializing in transforming a short user-provided description into a hyper-realistic, cinematic first-person POV prompt. This prompt is optimized for both text-to-image and text-to-video AI models such as Flux, MidJourney, Stable Diffusion, Runway Gen-3 Alpha, and Pika Labs.\n\n✅ The final output must be a single, AI-ready paragraph that:\nStrictly adheres to first-person POV, ensuring immersion.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nIncludes visible limbs (hands/feet) interacting with the environment.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nRemains under 950 characters.\n\n🔷 POV Rules & Guidelines for Generating Prompts\n\n✅ First-Person Perspective Only\nThe viewer must feel like they are experiencing the moment firsthand.\nFraming should mimic a GoPro-style immersive shot, with depth, reactivity, and presence.\n✅ Visible Limbs for Immersion\nA hand, foot, or both must be visible in the foreground.\nThe limbs should be gripping, touching, moving, adjusting, or reacting to the world naturally.\n✅ World Interaction\nThe body should physically interact with the environment (e.g., holding a shield, adjusting a gas mask, gripping reins).\nThe world should feel alive and responsive to the viewer’s presence.\n✅ Sensory & Cinematic Detail\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood\nInclude weather, motion, emotional atmosphere, and environmental reactions.\n✅ Structured Formatting\nForeground (POV Interaction – Image Focus)\nStart with:\n“First-person view POV GoPro shot of [hands/feet interacting with the scene]...”\nBackground (Scene & Environment – Video Focus)\nTransition into:\n“In the background, [describe the world’s reactions, motion, weather, and cinematic setting]...”\n🧠 Example User Inputs & AI Outputs\n\n🔹 Input:\nPOV: You’re a knight in battle\n\nprompt:\nFirst-person view POV GoPro shot of my gauntleted hands gripping the hilt of a longsword, the steel gleaming under the afternoon sun. Blood and mud splatter my armor as I brace for the enemy’s charge. My heartbeat pounds in my ears, my grip tightening just before the clash. In the background, banners of rival kingdoms whip in the wind, war horns blare, and enemies surge forward with brutal intent.\n\n🔹 Input:\nPOV: You Wake Up as Cleopatra in Ancient Egypt\n\nprompt:\nFirst-person view POV GoPro shot of my elegant hands delicately adjusting a bejeweled headdress. In the background, golden sunlight floods the marble chamber as servants bow in silence and incense smoke curls toward the ornate ceiling.\n\n🔹 Input:\nPOV: You’re a Viking at Sea\n\nprompt:\nFirst-person view POV GoPro shot of my calloused hands gripping the rough wooden oar. In the background, my fellow warriors row in sync, their fur-lined cloaks whipping in the wind as a serpent-shaped figurehead cuts through the mist. Distant thunder rumbles as gulls cry overhead.\n\n🔹 Input:\nPOV: You’re a Soldier in the Trenches of World War I\n\nprompt:\nFirst-person view POV GoPro shot of my dirt-covered hands gripping a bolt-action rifle, my breath fogging against the freezing air. My uniform is soaked in mud, the damp fabric clinging to my skin. The wooden trench walls loom beside me, reinforced with sandbags, slick with rain. In the background, artillery shells streak through the night sky, their explosions illuminating the battlefield in violent flashes. The ground trembles with each impact, shaking loose debris from above. A comrade beside me fumbles for his cigarette, his fingers trembling as he lights a match. A whistle pierces the chaos—the signal to charge. My heart pounds as I hoist my rifle, the camera tilting upward toward the hellscape beyond the trench walls.\n\nthe text should be big and visible when viewed from far should cover 40% of the image, design it.\n\nI have provided you list of prompts of images that looks good.\nuse the prompt engineering sheet to know how to write breif and very long prompt.\nuse the image promting sheet to know how to prompt image.\n\ntext should be clear.\nimages of human should be clear and well defined.\n\ncreate the prompt very very very detailed in 800 characters and the images should be hyperrealistic and super detailed.\n\n⚠️ Final Reminder:\nyour goal is to create a prompt to generate image\nprompt must be under 950 characters\n\n\nalways name the output as \"prompt\""
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1980,
+        1100
+      ],
+      "id": "507ab396-91c1-486f-94c3-31a8264a6346",
+      "name": "OpenAI1",
+      "credentials": {
+        "openAiApi": {
+          "id": "Xw6Z972WrQ0odb7Q",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.linkedin.com/v2/userinfo",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3900,
+        1100
+      ],
+      "id": "491c8dfe-b51f-444d-beb0-e6cbd9253d48",
+      "name": "HTTP Request",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Posts": "={{ $json.message.content.post }}",
+            "post status": "Controversial"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Keywords",
+              "displayName": "Keywords",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Posts",
+              "displayName": "Posts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Images",
+              "displayName": "Images",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "post status",
+              "displayName": "post status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1540,
+        1100
+      ],
+      "id": "fe73be71-9b2f-4089-9bdc-373abeca59bf",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "gdzJZ2JKvFWy7g4b",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=create 5 brief trending things for strictly on this input {{ $('On form submission').item.json.Evergreen }} only  related to ai or corporate or tech(between 1970-2025).\n\nyour research should be relatable for the date {{ $now }}.\n\nThe post should always be realted to ai,tech or corporate jobs.\n\nThink deep and research and reason.\n\n\nyour sources of information can come from \n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\nno multiple sub heading and \n\nAlways begin by conducting a real-time search using the Tavily tool to gather the most accurate, up-to-date information on the topic. The post should be written to appeal to the provided target audience.\nBased on your research, generate a well-structured LinkedIn post that: - Starts with an engaging hook\n- Professional in tone\n- Clear and easy to read\nEducational and insightful\n- Light on emojis (use only when highly relevant and minimal)\n- Includes proper source attribution (e.g., \"according to [source]\")\n\ngive me only content not any heading nor sub heading and name it \"post\" always\n\nkeep the always condition their like\n\"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n\n\ncreate 5 brief trending things for strictly on this input only {{ $('On form submission').item.json.Evergreen }}.\ndon't attach links.\n\noutput must have 5 things.\n\"post\" always\nword limit 40 words(include detailed verifiable numbers brief about the topic).\nand the other subtopics shoud be named \"post 1\",\"post 2\",\"post 3\",\"post 4\",\"post 5\"..\n\n"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        780,
+        900
+      ],
+      "id": "01629696-c5ad-403a-8586-5603ca29d062",
+      "name": "evergreen topic",
+      "credentials": {
+        "openAiApi": {
+          "id": "Xw6Z972WrQ0odb7Q",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I",
+          "mode": "list",
+          "cachedResultName": "n8n linked in",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Posts": "={{ $json.message.content.post }}",
+            "post status": "Evergreen"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Keywords",
+              "displayName": "Keywords",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Posts",
+              "displayName": "Posts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Images",
+              "displayName": "Images",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "post status",
+              "displayName": "post status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1540,
+        900
+      ],
+      "id": "1efcf8d0-ab01-4c5d-88dd-3770f0189cba",
+      "name": "Google Sheets1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "gdzJZ2JKvFWy7g4b",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=#Important\nFirst and foremost determine these Important part -\n* here are the five topics{{ $json.message.content['post 1'] }},{{ $json.message.content['post 2'] }},{{ $json.message.content['post 3'] }},{{ $json.message.content['post 4'] }} and {{ $json.message.content['post 5'] }} that i have selected to revolve around the input {{ $('On form submission').item.json.Evergreen }}, select one from the above 5 paragraphs and create post using that one.\n* As the input can vary and the prompt are rigid i want somethings that you have to follow for cetain inputs.\n* Input = {{ $('On form submission').item.json.Evergreen }}\n* if {{ $('On form submission').item.json.Evergreen }} == 10 Chat gpt prompts for your success. give the output as 10 chatgpt prompts that are applicable for them related to ai,tech or to help them in corporate things.\n* if {{ $('On form submission').item.json.Evergreen }} == Common Mistakes.Give the output as 10 most common mistake that people make using ai, tech or in corporate jobs.\n* if{{ $('On form submission').item.json.Evergreen }} == Famous person. then give output of a Famous person from history that had helped humanity in a good way.\n* if{{ $('On form submission').item.json.Evergreen }} == Latest ai news. then the output should be of 10 things about the lastest ai technology developed not older than 1 week from {{ $now }} using https://www.artificialintelligence-news.com/ this website.\n* if {{ $('On form submission').item.json.Evergreen }} == Self‑assessment quizzes. then output must be of 10 quetions to do self assesment of oneself to be succesfull in the field of ai, tech or corporate fields.\n* if{{ $('On form submission').item.json.Evergreen }} == Case Studies / Success Stories. The output should be of someone or something that helped ai, tech or corporate industry to grow immensily.\n* if{{ $('On form submission').item.json.Evergreen }} == Tool Recommendations. the output should be of 10 tools that ai,tech or corporate people can use right now to grow immensily.\n* if{{ $('On form submission').item.json.Evergreen }} == Dos & Don’ts. the output should be 5 do's and 5 don't regarding ai, tech or corporate people.\n\nselect one of the above first and foremost then follow the following prompt.\n\n\n\n#Must Rules to follow - \n* must leave 2 lines gaps to after the hook always.\n* your post should include some numbers.\n* should include some links to make the information verifiable.\n* this post is to help people with ai, tech or corporate jobs.\n* Always name the output: post\n* No multiple subheadings\n* Never include template brackets or explanations or **.\n* Never exceed 420 words\n* use emojis\n* Never break the LinkedIn paragraph format\n* Always use a real quote + hashtags at the end\n* Always end with “Did you know?” + surprising fact\n* Always sound like a human — not robotic\n* must leave 2 lines gaps to after the hook always.\n* must have good hasgtags related to the topic.\n* don't use ** or * to bold someting, no bold letters\n* in the end use a quote related to the post and a random fact of related issue or title given.\n* in the give them a reason why i am speaking on this topic by giving them something from achievement sheets that validates me.\n* no multiple sub heading\n* give me only content not any heading nor sub heading and name it \"post\" always\n* keep the always condition their like\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* should have some numbers and links to the articles.\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n\ndon't mention what the input is, just create post on it.input is =={{ $('On form submission').item.json.Evergreen }}\n\nResources(go through the full sheet and then reply) - \n#1 - Framework sheet to get frameworks.\n2 - hooks sheet to select most cathy hook in 8-10 words(must leave 2 lines gaps to after the hook always.).\n3 - use cta sheet to find best cta to put in end of the post.\n4 - achievements sheets have all my acheivement.\n\n#your sources of information can come from the below.\n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\n\n## Example Workflow:|\n1) Receive a topic (e.g., \"The ROI of warehouse automation\")\n2) Use Tavily to search and gather recent information or case studies\n3) Draft a LinkedIn post using that research\n4) Format it with source citations, clean structure, optional hashtags, and a call to action\n\nRestrictions:\n* don't give a generic post with no value, should have some numbers and links to the articles.\n* always do #important first and then move on to the rest of the prompts.\n* never include \"**\" this in output.\n\n#my achievements\nOrganic Views Generated\t20,000,000+\tClients (Various Platforms)\tOverall\tHigh visibility and reach\t\nOrganic Views Gained\t250,000+\tInstagram (Personal Page)\t1 Month\t2,000+ Organic Followers\t\nSubscribers Generated\t20,000+\tYouTube\tOngoing\tStrong subscriber growth\t\nOrganic Views on Videos\t200,000+\tYouTube\tOngoing\tIncreased engagement and brand awareness\t\nWebsites Designed\tMultiple\tWeb Design Projects\tVarious\tImproved sales performance\t\n\n#Hooks to use \n📚 Education Hooks\n1. This is how to (industry tip/hack) in under 60 seconds\n2. Next time you do X and you want (dream result) do this immediately before/during/after\n3. Here is a (industry) hack that most people don't know about\n4. Have you ever wondered how to get (dream result)? Don’t worry I won’t gatekeep — here’s exactly how\n5. Unethical ways to get (dream result)\n6. Here is a (industry) hack I bet you didn’t know, I kind of wanted to gate-keep this but screw it I am feeling generous\n7. This video will make/teach you more than a 4-year (industry) degree\n8. I made 10x more X when I put all my effort towards X\n9. The greatest X of our generation said (valuable industry advice)\n10. I have made/done/grown (desired result) — here are 3 things I wish I knew earlier\n🧠 Myths Hooks\n1. You’re being brainwashed into believing this (industry myth)\n2. If I had a dollar for every time I saw someone falling for (industry myth) I’d be rich\n3. Why (popular industry belief) is complete BS\n4. The oldest lady to ever live drank and smoked until she was 116 — if you think you have to be perfect to achieve X, you’re wrong\n5. Not seeing (dream result)? You’re probably falling for this common (industry) myth\n6. Here are 5 common myths popular (niche) influencers want you to believe\n7. Here are the top (number) (industry) myths ruining your chances of success\n8. If you're doing (industry myth), you’ll never achieve (dream result) — here’s why\n9. Controversial truth about (industry) myth — e.g., bananas make you fat\n10. Remember when your parents said (industry myth)? They were lying to you\n11. Doing (industry myth) is like taking advice from someone who was divorced 7 times — it won’t help you\n🛠️ Step-by-Step Systems Hooks\n1. I charge my clients $X–$X per year — here’s my favorite (industry strategy)\n2. This is how to (industry task) in under 60 seconds\n3. What should you do if you want (industry result) in (timeframe)?\n4. X is overrated — here’s what actually gets (dream result)\n5. Here’s how to double, triple, or 10x your (result) in 3 steps\n6. I’m going to show you how to hack X in 30 seconds\n7. I should be charging for what I’m about to tell you\n8. The top ?’s of (avatar) do this\n9. Here’s how to get (result) in X steps\n10. This is your sign to finally start X — here are the first X steps\n⚠️ Common Mistakes Hooks\n1. If you're stuck at (pain point) and want (result), stop doing this (mistake)\n2. You need to stop (industry task) — at least until you do this one thing\n3. (Industry mistake) is destroying your (dream result)\n4. You’re throwing (results) in the trash if you’re doing this\n5. Stop making this mistake or your mother-in-law will hate you more\n6. Here are 3 mistakes newbies make that you should avoid\n7. You need to (fix mistake) — the gurus are wrong\n8. (Mistake) is like bringing a knife to a gunfight — you’ll lose\n9. You’d see better results if you fixed this one common mistake\n10. Making this mistake is like trying to get fit eating junk — doesn’t work\n🧍 Authority Hooks\n1. This week/month/year I achieved (result) using this method\n2. This strategy helped me achieve (result) in X days — here’s how\n3. I have done 291,200 (tasks) in the last decade — this works\n4. I went from X to X in X (time) — here’s how you can too\n5. I took my client from X to X in X (time) — here’s the exact method\n6. Steal my strategy to get (ideal client result)\n7. I’m going to show you how I did this for my client in under 1 hour\n8. If you had (problem) and hired me, these are the 3 things I’d do\n9. I’ve worked with over X clients — here’s how I get results\n10. Take it from someone with X years in the industry — this is the best way\n\n#Cta\nDiscussion\tWhat’s your take on this? I’d love to hear your perspective.\nDiscussion\tHave you experienced something similar? Let’s talk in the comments.\nDiscussion\tCurious to know—do you agree or would you approach it differently?\nDiscussion\tWhich one of these have you seen happen most often?\nDiscussion\tWhere do you think most people go wrong here?\n\t\nConnection\tIf this resonated, let’s connect and share insights.\nConnection\tI’m always open to exchanging ideas—DMs are open.\nConnection\tWorking on something similar? Let’s collaborate.\nConnection\tIf this aligns with your work, let’s talk.\nConnection\tHelping teams solve problems like this—feel free to reach out.\n\t\nAction-Oriented\tSave this for when you need it most.\nAction-Oriented\tIf you’re planning to try this—start with step 1 today.\nAction-Oriented\tUse this as a checklist in your next project.\nAction-Oriented\tImplement this once and see how it changes your outcomes.\nAction-Oriented\tHere’s your framework—don’t let it stay theoretical.\n\t\nInsightful Close\tThere’s more nuance to this than a post can cover—happy to dive deeper if needed.\nInsightful Close\tThis is just one angle—what would you add to this?\nInsightful Close\tReal change starts with small shifts like this.\nInsightful Close\tSometimes the most effective strategies are also the simplest.\nInsightful Close\tThis is what worked for me—your mileage may vary, but the lesson holds.\n\n\n## Output Instructions:\n-Your ONLY output should be the final LinkedIn post text.\n- Do not include explanations, notes, or anything beyond the post itself.\n- give the output with suitable verifiable numbers and links of sources attached in your para so  that we can validate it.\n\nif can't access sheets, create your own data that have proven to go viral using the hooks and cta provided. \ndon't make the text bold."
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1160,
+        900
+      ],
+      "id": "d0a27b3e-d734-4322-a2d8-b9d80ac42cc8",
+      "name": "Evergreen Post creator",
+      "credentials": {
+        "openAiApi": {
+          "id": "K3GAPPdmjuYI9Mj4",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.linkedin.com/v2/userinfo",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3900,
+        900
+      ],
+      "id": "d179d700-959f-467f-9124-3ee9e983bba4",
+      "name": "HTTP Request1",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api-inference.huggingface.co/models/Aungkhine/Simbolo_Text_to_Image_Generator_V3",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "inputs",
+              "value": "={{ $json.message.content.prompt }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        340,
+        640
+      ],
+      "id": "89c6ce8a-f09c-41c0-83c6-3a478e0e61db",
+      "name": "HTTP Request6",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=think deep about this input {{ $('Google Sheets1').item.json.Posts }} and create a image using the following prompt.\n\n#Important(input == {{ $('On form submission').item.json.Evergreen }})\nFirst and foremost determine these Important part -\n* As the input can vary and the prompt are rigid i want somethings that you have to follow for cetain inputs.\n* Input = {{ $('On form submission').item.json.Evergreen }}\n* if {{ $('On form submission').item.json.Evergreen }}== 10 Chat gpt prompts for your success. create image yourself.\n* if {{ $('On form submission').item.json.Evergreen }}== Common Mistakes.give the output as to create image including someone panicking that they have made some mistake.\n* if {{ $('On form submission').item.json.Evergreen }} == Famous person. give the output as to create image including  the face of that famous person with their name.\n* if{{ $('On form submission').item.json.Evergreen }} == Latest ai news. create yourself.\n* if {{ $('On form submission').item.json.Evergreen }} == Self‑assessment quizzes.give the output as to create image including giving an interview written quiz on top.\n* if {{ $('On form submission').item.json.Evergreen }} == Case Studies / Success Stories. give the output as to create image including someone helping others written some quote.\n* if {{ $('On form submission').item.json.Evergreen }} == Tool Recommendations. give the output as to create image including someone using ai tools seating in an open field.\n* if {{ $('On form submission').item.json.Evergreen }} == Dos & Don’ts. give the output as to create image including someone doing what should be done.\n\nfrom the above you can take inspiration and can prompt on these using resources in documents provided.\n\n\n🎥 First-Person POV Image & Video Prompt Generator\n\n(Single Input → Unified Output)\n\n📌 Task:\nYou are an advanced AI specializing in transforming a short user-provided description into a hyper-realistic, cinematic first-person POV prompt. This prompt is optimized for both text-to-image and text-to-video AI models such as Flux, MidJourney, Stable Diffusion, Runway Gen-3 Alpha, and Pika Labs.\n\n✅ The final output must be a single, AI-ready paragraph that:\nStrictly adheres to first-person POV, ensuring immersion.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nIncludes visible limbs (hands/feet) interacting with the environment.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nRemains under 950 characters.\n\n🔷 POV Rules & Guidelines for Generating Prompts\n\n✅ First-Person Perspective Only\nThe viewer must feel like they are experiencing the moment firsthand.\nFraming should mimic a GoPro-style immersive shot, with depth, reactivity, and presence.\n✅ Visible Limbs for Immersion\nA hand, foot, or both must be visible in the foreground.\nThe limbs should be gripping, touching, moving, adjusting, or reacting to the world naturally.\n✅ World Interaction\nThe body should physically interact with the environment (e.g., holding a shield, adjusting a gas mask, gripping reins).\nThe world should feel alive and responsive to the viewer’s presence.\n✅ Sensory & Cinematic Detail\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood\nInclude weather, motion, emotional atmosphere, and environmental reactions.\n✅ Structured Formatting\nForeground (POV Interaction – Image Focus)\nStart with:\n“First-person view POV GoPro shot of [hands/feet interacting with the scene]...”\nBackground (Scene & Environment – Video Focus)\nTransition into:\n“In the background, [describe the world’s reactions, motion, weather, and cinematic setting]...”\n🧠 Example User Inputs & AI Outputs\n\n🔹 Input:\nPOV: You’re a knight in battle\n\nprompt:\nFirst-person view POV GoPro shot of my gauntleted hands gripping the hilt of a longsword, the steel gleaming under the afternoon sun. Blood and mud splatter my armor as I brace for the enemy’s charge. My heartbeat pounds in my ears, my grip tightening just before the clash. In the background, banners of rival kingdoms whip in the wind, war horns blare, and enemies surge forward with brutal intent.\n\n🔹 Input:\nPOV: You Wake Up as Cleopatra in Ancient Egypt\n\nprompt:\nFirst-person view POV GoPro shot of my elegant hands delicately adjusting a bejeweled headdress. In the background, golden sunlight floods the marble chamber as servants bow in silence and incense smoke curls toward the ornate ceiling.\n\n🔹 Input:\nPOV: You’re a Viking at Sea\n\nprompt:\nFirst-person view POV GoPro shot of my calloused hands gripping the rough wooden oar. In the background, my fellow warriors row in sync, their fur-lined cloaks whipping in the wind as a serpent-shaped figurehead cuts through the mist. Distant thunder rumbles as gulls cry overhead.\n\n🔹 Input:\nPOV: You’re a Soldier in the Trenches of World War I\n\nprompt:\nFirst-person view POV GoPro shot of my dirt-covered hands gripping a bolt-action rifle, my breath fogging against the freezing air. My uniform is soaked in mud, the damp fabric clinging to my skin. The wooden trench walls loom beside me, reinforced with sandbags, slick with rain. In the background, artillery shells streak through the night sky, their explosions illuminating the battlefield in violent flashes. The ground trembles with each impact, shaking loose debris from above. A comrade beside me fumbles for his cigarette, his fingers trembling as he lights a match. A whistle pierces the chaos—the signal to charge. My heart pounds as I hoist my rifle, the camera tilting upward toward the hellscape beyond the trench walls.\n\nthe text should be big and visible when viewed from far should cover 40% of the image, design it.\n\nI have provided you list of prompts of images that looks good.\nuse the prompt engineering sheet to know how to write breif and very long prompt.\nuse the image promting sheet to know how to prompt image.\n\ntext should be clear.\nimages of human should be clear and well defined.\n\ncreate the prompt very very very detailed in 800 characters and the images should be hyperrealistic and super detailed.\n\n⚠️ Final Reminder:\nyour goal is to create a prompt to generate image\nprompt must be under 950 characters\n\n\nalways name the output as \"prompt\"\n\n"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1980,
+        900
+      ],
+      "id": "5e8cd5a0-1745-47fc-a522-25c6faaca73e",
+      "name": "OpenAI",
+      "credentials": {
+        "openAiApi": {
+          "id": "Xw6Z972WrQ0odb7Q",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "=n8n - {{ $now }}",
+        "driveId": {
+          "__rl": true,
+          "value": "My Drive",
+          "mode": "list",
+          "cachedResultName": "My Drive",
+          "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1_04k9bn10fSwgshbd-441wu3YQmJ90oZ",
+          "mode": "list",
+          "cachedResultName": "n8n",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1_04k9bn10fSwgshbd-441wu3YQmJ90oZ"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3240,
+        900
+      ],
+      "id": "bc75aab3-c875-4160-9eeb-3f07c35db73f",
+      "name": "Google Drive2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Google Drive2').item.json.webContentLink }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4120,
+        900
+      ],
+      "id": "49f8c731-ddc0-4d2d-b353-ae82177560a5",
+      "name": "Donwload Image",
+      "alwaysOutputData": false,
+      "notesInFlow": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('HTTP Request8').item.json.value.uploadMechanism['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest'].uploadUrl }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4340,
+        900
+      ],
+      "id": "b2f54e1e-30b5-40aa-81d2-0c42d30e01dd",
+      "name": "HTTP Request7",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/assets",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "action",
+              "value": "registerUpload"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"registerUploadRequest\": {\n    \"recipes\": [\n      \"urn:li:digitalmediaRecipe:feedshare-image\"\n    ],\n    \"owner\": \"urn:li:person:qG98t6DaPa\",\n    \"serviceRelationships\": [\n      {\n        \"relationshipType\": \"OWNER\",\n        \"identifier\": \"urn:li:userGeneratedContent\"\n      }\n    ]\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3680,
+        900
+      ],
+      "id": "bca3886a-d02f-4688-8305-4afd8321a0b6",
+      "name": "HTTP Request8",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/ugcPosts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"author\": \"urn:li:person:{{ $('HTTP Request1').item.json.body.sub }}\",\n  \"lifecycleState\": \"PUBLISHED\",\n  \"specificContent\": {\n    \"com.linkedin.ugc.ShareContent\": {\n      \"shareCommentary\": {\n        \"text\": {{ JSON.stringify($('Google Sheets1').item.json.Posts) }}\n      },\n      \"shareMediaCategory\": \"IMAGE\",\n      \"media\": [\n        {\n          \"status\": \"READY\",\n          \"media\": \"{{ $('HTTP Request8').item.json.value.asset }}\"\n        }\n      ]\n    }\n  },\n  \"visibility\": {\n    \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n  }\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4560,
+        900
+      ],
+      "id": "05294db5-8fb3-4bda-8d64-541117097c24",
+      "name": "HTTP Request9",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3460,
+        900
+      ],
+      "id": "ca650df8-a224-4752-a7f1-965374cf30b6",
+      "name": "Google Drive3",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=create 5 brief trending things for strictly on this input {{ $('On form submission').item.json.Personal }} only  related to ai or corporate or tech(between 1970-2025).\n\nyour research should be relatable for the date {{ $now }}.\n\nThe post should always be realted to ai,tech or corporate jobs.\n\nThink deep and research and reason.\n\n\nyour sources of information can come from \n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\nno multiple sub heading and \n\nAlways begin by conducting a real-time search using the Tavily tool to gather the most accurate, up-to-date information on the topic. The post should be written to appeal to the provided target audience.\nBased on your research, generate a well-structured LinkedIn post that: - Starts with an engaging hook\n- Professional in tone\n- Clear and easy to read\nEducational and insightful\n- Light on emojis (use only when highly relevant and minimal)\n- Includes proper source attribution (e.g., \"according to [source]\")\n\ngive me only content not any heading nor sub heading and name it \"post\" always\n\nkeep the always condition their like\n\"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n\n\ncreate 5 brief trending things for strictly on this input only {{ $('On form submission').item.json.Personal }}.\ndon't attach links.\n\noutput must have 5 things.\n\"post\" always\nword limit 40 words(include detailed verifiable numbers brief about the topic).\nand the other subtopics shoud be named \"post_1\",\"post_2\",\"post_3\",\"post_4\",\"post_5\".."
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        780,
+        1300
+      ],
+      "id": "0d2e1c12-3478-46d8-813c-becebed3e611",
+      "name": "personal topic",
+      "credentials": {
+        "openAiApi": {
+          "id": "Xw6Z972WrQ0odb7Q",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4.1",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=* here are the five topics{{ $json.message.content['post_1'] }},{{ $json.message.content['post_2'] }},{{ $json.message.content['post_3'] }},{{ $json.message.content['post_4'] }} and {{ $json.message.content['post_5'] }} that i have selected to revolve around the input {{ $('On form submission').item.json.Personal}}, select one from the above 5 paragraphs and create post using that one.\n\n#Must Rules to follow - \n* must leave 2 lines gaps to after the hook always.\n* your post should include some numbers.\n* should include some links to make the information verifiable.\n* this post is to help people with ai, tech or corporate jobs.\n* Always name the output: post\n* No multiple subheadings\n* Never include template brackets or explanations or **.\n* Never exceed 420 words\n* use emojis\n* Never break the LinkedIn paragraph format\n* Always use a real quote + hashtags at the end\n* Use a quote that is trending and related to the selected Topic\n* Think of you as me, this is your personal experience post.\n* Always end with “Did you know?” + surprising fact\n* Always sound like a human — not robotic\n* must leave 2 lines gaps to after the hook always.\n* must have good hasgtags related to the topic.\n* don't use ** or * to bold someting, no bold letters\n* in the end use a quote related to the post and a random fact of related issue or title given.\n* in the give them a reason why i am speaking on this topic by giving them something from achievement sheets that validates me.\n* no multiple sub heading\n* give me only content not any heading nor sub heading and name it \"post\" always\n* keep the always condition their like\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* \"no multiple sub heading and give me only content not any heading nor sub heading and name it \"post\" always, fill the fillers yourself always.\n* Must and alwaysWrite my experience on the given topic,give my teaching that i learnt from the input.\nThis is a personal experience post, so use the framework that have personal feel to it.\n* should have some numbers and links to the articles.\n* Must and alwaysWrite my experience on the given topic,give my teaching that i learnt from the input.\nThis is a personal experience post, so use the framework that have personal feel to it.\n* Pull any extra context or up‑to‑date insights from public internet sources as needed.\n* warning - if you think this is not suitable for any topic you can create your own structure but always \"promise of payoff\" in the post.\n* use \"I\" to show that i am writing this post\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n* must leave 2 lines gaps to after the hook always.\n\ndon't mention what the input is, just create post on it.input is =={{ $('On form submission').item.json.Personal }}\n\nResources(go through the full sheet and then reply) - \n#1 - Framework sheet to get frameworks.\n2 - hooks sheet to select most cathy hook in 8-10 words(must leave 2 lines gaps to after the hook always.).\n3 - use cta sheet to find best cta to put in end of the post.\n4 - achievements sheets have all my acheivement.\n\n#your sources of information can come from the below.\n1(very usefull) - https://www.artificialintelligence-news.com/ and https://medium.com/tag/artificial-intelligence\n2 - quora\n3 - google\n\n\n## Example Workflow:|\n1) Receive a topic (e.g., \"The ROI of warehouse automation\")\n2) Use Tavily to search and gather recent information or case studies\n3) Draft a LinkedIn post using that research\n4) Format it with source citations, clean structure, optional hashtags, and a call to action\n\nRestrictions:\n* don't give a generic post with no value, should have some numbers and links to the articles.\n* always do #important first and then move on to the rest of the prompts.\n* never include \"**\" this in output.\n\n#my achievements\nOrganic Views Generated\t20,000,000+\tClients (Various Platforms)\tOverall\tHigh visibility and reach\t\nOrganic Views Gained\t250,000+\tInstagram (Personal Page)\t1 Month\t2,000+ Organic Followers\t\nSubscribers Generated\t20,000+\tYouTube\tOngoing\tStrong subscriber growth\t\nOrganic Views on Videos\t200,000+\tYouTube\tOngoing\tIncreased engagement and brand awareness\t\nWebsites Designed\tMultiple\tWeb Design Projects\tVarious\tImproved sales performance\t\n\n#Hooks to use \n📚 Education Hooks\n1. This is how to (industry tip/hack) in under 60 seconds\n2. Next time you do X and you want (dream result) do this immediately before/during/after\n3. Here is a (industry) hack that most people don't know about\n4. Have you ever wondered how to get (dream result)? Don’t worry I won’t gatekeep — here’s exactly how\n5. Unethical ways to get (dream result)\n6. Here is a (industry) hack I bet you didn’t know, I kind of wanted to gate-keep this but screw it I am feeling generous\n7. This video will make/teach you more than a 4-year (industry) degree\n8. I made 10x more X when I put all my effort towards X\n9. The greatest X of our generation said (valuable industry advice)\n10. I have made/done/grown (desired result) — here are 3 things I wish I knew earlier\n🧠 Myths Hooks\n1. You’re being brainwashed into believing this (industry myth)\n2. If I had a dollar for every time I saw someone falling for (industry myth) I’d be rich\n3. Why (popular industry belief) is complete BS\n4. The oldest lady to ever live drank and smoked until she was 116 — if you think you have to be perfect to achieve X, you’re wrong\n5. Not seeing (dream result)? You’re probably falling for this common (industry) myth\n6. Here are 5 common myths popular (niche) influencers want you to believe\n7. Here are the top (number) (industry) myths ruining your chances of success\n8. If you're doing (industry myth), you’ll never achieve (dream result) — here’s why\n9. Controversial truth about (industry) myth — e.g., bananas make you fat\n10. Remember when your parents said (industry myth)? They were lying to you\n11. Doing (industry myth) is like taking advice from someone who was divorced 7 times — it won’t help you\n🛠️ Step-by-Step Systems Hooks\n1. I charge my clients $X–$X per year — here’s my favorite (industry strategy)\n2. This is how to (industry task) in under 60 seconds\n3. What should you do if you want (industry result) in (timeframe)?\n4. X is overrated — here’s what actually gets (dream result)\n5. Here’s how to double, triple, or 10x your (result) in 3 steps\n6. I’m going to show you how to hack X in 30 seconds\n7. I should be charging for what I’m about to tell you\n8. The top ?’s of (avatar) do this\n9. Here’s how to get (result) in X steps\n10. This is your sign to finally start X — here are the first X steps\n⚠️ Common Mistakes Hooks\n1. If you're stuck at (pain point) and want (result), stop doing this (mistake)\n2. You need to stop (industry task) — at least until you do this one thing\n3. (Industry mistake) is destroying your (dream result)\n4. You’re throwing (results) in the trash if you’re doing this\n5. Stop making this mistake or your mother-in-law will hate you more\n6. Here are 3 mistakes newbies make that you should avoid\n7. You need to (fix mistake) — the gurus are wrong\n8. (Mistake) is like bringing a knife to a gunfight — you’ll lose\n9. You’d see better results if you fixed this one common mistake\n10. Making this mistake is like trying to get fit eating junk — doesn’t work\n🧍 Authority Hooks\n1. This week/month/year I achieved (result) using this method\n2. This strategy helped me achieve (result) in X days — here’s how\n3. I have done 291,200 (tasks) in the last decade — this works\n4. I went from X to X in X (time) — here’s how you can too\n5. I took my client from X to X in X (time) — here’s the exact method\n6. Steal my strategy to get (ideal client result)\n7. I’m going to show you how I did this for my client in under 1 hour\n8. If you had (problem) and hired me, these are the 3 things I’d do\n9. I’ve worked with over X clients — here’s how I get results\n10. Take it from someone with X years in the industry — this is the best way\n\n#Cta\nDiscussion\tWhat’s your take on this? I’d love to hear your perspective.\nDiscussion\tHave you experienced something similar? Let’s talk in the comments.\nDiscussion\tCurious to know—do you agree or would you approach it differently?\nDiscussion\tWhich one of these have you seen happen most often?\nDiscussion\tWhere do you think most people go wrong here?\n\t\nConnection\tIf this resonated, let’s connect and share insights.\nConnection\tI’m always open to exchanging ideas—DMs are open.\nConnection\tWorking on something similar? Let’s collaborate.\nConnection\tIf this aligns with your work, let’s talk.\nConnection\tHelping teams solve problems like this—feel free to reach out.\n\t\nAction-Oriented\tSave this for when you need it most.\nAction-Oriented\tIf you’re planning to try this—start with step 1 today.\nAction-Oriented\tUse this as a checklist in your next project.\nAction-Oriented\tImplement this once and see how it changes your outcomes.\nAction-Oriented\tHere’s your framework—don’t let it stay theoretical.\n\t\nInsightful Close\tThere’s more nuance to this than a post can cover—happy to dive deeper if needed.\nInsightful Close\tThis is just one angle—what would you add to this?\nInsightful Close\tReal change starts with small shifts like this.\nInsightful Close\tSometimes the most effective strategies are also the simplest.\nInsightful Close\tThis is what worked for me—your mileage may vary, but the lesson holds.\n\n\n## Output Instructions:\n-Your ONLY output should be the final LinkedIn post text.\n- Do not include explanations, notes, or anything beyond the post itself.\n- give the output with suitable verifiable numbers and links of sources attached in your para so  that we can validate it.\n\nif can't access sheets, create your own data that have proven to go viral using the hooks and cta provided. "
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1160,
+        1300
+      ],
+      "id": "5b852fb4-b517-4c2f-9839-72cf41481960",
+      "name": "Personal Post creator",
+      "credentials": {
+        "openAiApi": {
+          "id": "K3GAPPdmjuYI9Mj4",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3460,
+        1300
+      ],
+      "id": "83ed8bb9-bbe6-4faa-aba2-a430e3618fcf",
+      "name": "Google Drive4",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/ugcPosts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"author\": \"urn:li:person:{{ $('HTTP Request14').item.json.body.sub }}\",\n  \"lifecycleState\": \"PUBLISHED\",\n  \"specificContent\": {\n    \"com.linkedin.ugc.ShareContent\": {\n      \"shareCommentary\": {\n        \"text\": {{ JSON.stringify($('Google Sheets2').item.json.Posts) }}\n      },\n      \"shareMediaCategory\": \"IMAGE\",\n      \"media\": [\n        {\n          \"status\": \"READY\",\n          \"media\": \"{{ $('HTTP Request11').item.json.value.asset }}\"\n        }\n      ]\n    }\n  },\n  \"visibility\": {\n    \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n  }\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4560,
+        1300
+      ],
+      "id": "a3d94c50-9fe3-401a-8a5c-fcff7df173f0",
+      "name": "HTTP Request10",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/assets",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "action",
+              "value": "registerUpload"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"registerUploadRequest\": {\n    \"recipes\": [\n      \"urn:li:digitalmediaRecipe:feedshare-image\"\n    ],\n    \"owner\": \"urn:li:person:qG98t6DaPa\",\n    \"serviceRelationships\": [\n      {\n        \"relationshipType\": \"OWNER\",\n        \"identifier\": \"urn:li:userGeneratedContent\"\n      }\n    ]\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3680,
+        1300
+      ],
+      "id": "2b98771a-a67f-4c83-a521-f5296a59e908",
+      "name": "HTTP Request11",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('HTTP Request11').item.json.value.uploadMechanism['com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest'].uploadUrl }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4340,
+        1300
+      ],
+      "id": "c73e0cee-8b0c-488f-b677-cc4b94afa1ec",
+      "name": "HTTP Request12",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Google Drive5').item.json.webContentLink }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4120,
+        1300
+      ],
+      "id": "8a66dc68-9db3-4c3e-b0bd-e79be228b75e",
+      "name": "Donwload Image2",
+      "alwaysOutputData": false,
+      "notesInFlow": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "name": "=n8n - {{ $now }}",
+        "driveId": {
+          "__rl": true,
+          "value": "My Drive",
+          "mode": "list",
+          "cachedResultName": "My Drive",
+          "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1_04k9bn10fSwgshbd-441wu3YQmJ90oZ",
+          "mode": "list",
+          "cachedResultName": "n8n",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1_04k9bn10fSwgshbd-441wu3YQmJ90oZ"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3240,
+        1300
+      ],
+      "id": "9dc08aee-6e1d-47b9-a6a0-5656f7db4c66",
+      "name": "Google Drive5",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "hTNjk7MBqaxpNKBb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=think deep about this input {{ $('Google Sheets2').item.json.Posts }} and create a image using the following prompt.\n\n#Important(input == {{ $('On form submission').item.json.Personal }})\nFirst and foremost determine these Important part -\n\nfrom the above you can take inspiration and can prompt on these using resources in documents provided.\n\n\n🎥 First-Person POV Image & Video Prompt Generator\n\n(Single Input → Unified Output)\n\n📌 Task:\nYou are an advanced AI specializing in transforming a short user-provided description into a hyper-realistic, cinematic first-person POV prompt. This prompt is optimized for both text-to-image and text-to-video AI models such as Flux, MidJourney, Stable Diffusion, Runway Gen-3 Alpha, and Pika Labs.\n\n✅ The final output must be a single, AI-ready paragraph that:\nStrictly adheres to first-person POV, ensuring immersion.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nIncludes visible limbs (hands/feet) interacting with the environment.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nRemains under 950 characters.\n\n🔷 POV Rules & Guidelines for Generating Prompts\n\n✅ First-Person Perspective Only\nThe viewer must feel like they are experiencing the moment firsthand.\nFraming should mimic a GoPro-style immersive shot, with depth, reactivity, and presence.\n✅ Visible Limbs for Immersion\nA hand, foot, or both must be visible in the foreground.\nThe limbs should be gripping, touching, moving, adjusting, or reacting to the world naturally.\n✅ World Interaction\nThe body should physically interact with the environment (e.g., holding a shield, adjusting a gas mask, gripping reins).\nThe world should feel alive and responsive to the viewer’s presence.\n✅ Sensory & Cinematic Detail\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood\nInclude weather, motion, emotional atmosphere, and environmental reactions.\n✅ Structured Formatting\nForeground (POV Interaction – Image Focus)\nStart with:\n“First-person view POV GoPro shot of [hands/feet interacting with the scene]...”\nBackground (Scene & Environment – Video Focus)\nTransition into:\n“In the background, [describe the world’s reactions, motion, weather, and cinematic setting]...”\n🧠 Example User Inputs & AI Outputs\n\n🔹 Input:\nPOV: You’re a knight in battle\n\nprompt:\nFirst-person view POV GoPro shot of my gauntleted hands gripping the hilt of a longsword, the steel gleaming under the afternoon sun. Blood and mud splatter my armor as I brace for the enemy’s charge. My heartbeat pounds in my ears, my grip tightening just before the clash. In the background, banners of rival kingdoms whip in the wind, war horns blare, and enemies surge forward with brutal intent.\n\n🔹 Input:\nPOV: You Wake Up as Cleopatra in Ancient Egypt\n\nprompt:\nFirst-person view POV GoPro shot of my elegant hands delicately adjusting a bejeweled headdress. In the background, golden sunlight floods the marble chamber as servants bow in silence and incense smoke curls toward the ornate ceiling.\n\n🔹 Input:\nPOV: You’re a Viking at Sea\n\nprompt:\nFirst-person view POV GoPro shot of my calloused hands gripping the rough wooden oar. In the background, my fellow warriors row in sync, their fur-lined cloaks whipping in the wind as a serpent-shaped figurehead cuts through the mist. Distant thunder rumbles as gulls cry overhead.\n\n🔹 Input:\nPOV: You’re a Soldier in the Trenches of World War I\n\nprompt:\nFirst-person view POV GoPro shot of my dirt-covered hands gripping a bolt-action rifle, my breath fogging against the freezing air. My uniform is soaked in mud, the damp fabric clinging to my skin. The wooden trench walls loom beside me, reinforced with sandbags, slick with rain. In the background, artillery shells streak through the night sky, their explosions illuminating the battlefield in violent flashes. The ground trembles with each impact, shaking loose debris from above. A comrade beside me fumbles for his cigarette, his fingers trembling as he lights a match. A whistle pierces the chaos—the signal to charge. My heart pounds as I hoist my rifle, the camera tilting upward toward the hellscape beyond the trench walls.\n\nthe text should be big and visible when viewed from far should cover 40% of the image, design it.\n\nI have provided you list of prompts of images that looks good.\nuse the prompt engineering sheet to know how to write breif and very long prompt.\nuse the image promting sheet to know how to prompt image.\n\ntext should be clear.\nimages of human should be clear and well defined.\n\ncreate the prompt very very very detailed in 800 characters and the images should be hyperrealistic and super detailed.\n\n⚠️ Final Reminder:\nyour goal is to create a prompt to generate image\nprompt must be under 950 characters\n\n\nalways name the output as \"prompt\""
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        1980,
+        1300
+      ],
+      "id": "57f28524-44f0-4a57-ac89-52bad522967f",
+      "name": "OpenAI2",
+      "credentials": {
+        "openAiApi": {
+          "id": "K3GAPPdmjuYI9Mj4",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.linkedin.com/v2/userinfo",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3900,
+        1300
+      ],
+      "id": "0d2e4f63-0d31-478a-b44a-19c7bd2b6be5",
+      "name": "HTTP Request14",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit?usp=sharing",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1VErQwmBahp13_fJZ8EbgAYVjtUJjtK02rDYLACBKE8I/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Posts": "={{ $json.message.content.post }}",
+            "post status": "Personal"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Keywords",
+              "displayName": "Keywords",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Posts",
+              "displayName": "Posts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Images",
+              "displayName": "Images",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "post status",
+              "displayName": "post status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1540,
+        1300
+      ],
+      "id": "421965f3-426d-4756-9295-42225910e1d7",
+      "name": "Google Sheets2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "gdzJZ2JKvFWy7g4b",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formTitle": "Content selection",
+        "formDescription": "Choose a content type that you want to Post on linkedIn",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Choose content type",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Evergreen"
+                  },
+                  {
+                    "option": "Controversial"
+                  },
+                  {
+                    "option": "Personal"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Evergreen",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "10 Chat gpt prompts for your success"
+                  },
+                  {
+                    "option": "Common Mistakes"
+                  },
+                  {
+                    "option": "Famous person"
+                  },
+                  {
+                    "option": "Latest ai news"
+                  },
+                  {
+                    "option": "Self‑assessment quizzes"
+                  },
+                  {
+                    "option": "Case Studies / Success Stories "
+                  },
+                  {
+                    "option": "Tool Recommendations"
+                  },
+                  {
+                    "option": "Dos & Don’ts"
+                  },
+                  {
+                    "option": "Randomly choose your subtopic"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Controversial",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Industry Myths "
+                  },
+                  {
+                    "option": "Famous historical figures controversial deeds that affects us now"
+                  },
+                  {
+                    "option": "Unpopular Opinions on best practices"
+                  },
+                  {
+                    "option": "Failures of Popular Tools/Methods"
+                  },
+                  {
+                    "option": "Advice That Might Be Wrong (and why)"
+                  },
+                  {
+                    "option": "Overhyped Technologies vs. real impact"
+                  },
+                  {
+                    "option": "Randomly choose your subtopic"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Personal",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Turning‑Point Stories that shaped my career"
+                  },
+                  {
+                    "option": "Biggest Failures and the lessons learned"
+                  },
+                  {
+                    "option": "Morning/Evening Routines that keep you focused"
+                  },
+                  {
+                    "option": "Book/Resource Recommendations that influenced you"
+                  },
+                  {
+                    "option": "Aspirations & Goals you’re working toward"
+                  },
+                  {
+                    "option": "Randomly choose your subtopic"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "responseMode": "lastNode",
+        "options": {
+          "respondWithOptions": {
+            "values": {
+              "formSubmittedText": "Your linkedIn post is ready."
+            }
+          },
+          "customCss": ":root {\n\t--font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\t--font-weight-normal: 400;\n\t--font-weight-bold: 600;\n\t--font-size-body: 12px;\n\t--font-size-label: 14px;\n\t--font-size-test-notice: 12px;\n\t--font-size-input: 14px;\n\t--font-size-header: 20px;\n\t--font-size-paragraph: 14px;\n\t--font-size-link: 12px;\n\t--font-size-error: 12px;\n\t--font-size-html-h1: 28px;\n\t--font-size-html-h2: 20px;\n\t--font-size-html-h3: 16px;\n\t--font-size-html-h4: 14px;\n\t--font-size-html-h5: 12px;\n\t--font-size-html-h6: 10px;\n\t--font-size-subheader: 14px;\n\n\t/* Colors */\n\t--color-background: #f3f2ef;\n\t--color-test-notice-text: #0077B5;\n\t--color-test-notice-bg: #e6f7ff;\n\t--color-test-notice-border: #91d5ff;\n\t--color-card-bg: #ffffff;\n\t--color-card-border: #cccccc;\n\t--color-card-shadow: rgba(0, 0, 0, 0.1);\n\t--color-link: #0077B5;\n\t--color-header: #191919;\n\t--color-label: #666666;\n\t--color-input-border: #cccccc;\n\t--color-input-text: #000000;\n\t--color-focus-border: #0077B5;\n\t--color-submit-btn-bg: #0077B5;\n\t--color-submit-btn-text: #ffffff;\n\t--color-error: #cf142b;\n\t--color-required: #cf142b;\n\t--color-clear-button-bg: #7e8186;\n\t--color-html-text: #333333;\n\t--color-html-link: #0077B5;\n\t--color-header-subtext: #666666;\n\n\t/* Border Radii */\n\t--border-radius-card: 8px;\n\t--border-radius-input: 6px;\n\t--border-radius-clear-btn: 50%;\n\t--card-border-radius: 8px;\n\n\t/* Spacing */\n\t--padding-container-top: 24px;\n\t--padding-card: 24px;\n\t--padding-test-notice-vertical: 12px;\n\t--padding-test-notice-horizontal: 24px;\n\t--margin-bottom-card: 16px;\n\t--padding-form-input: 12px;\n\t--card-padding: 24px;\n\t--card-margin-bottom: 16px;\n\n\t/* Dimensions */\n\t--container-width: 448px;\n\t--submit-btn-height: 48px;\n\t--checkbox-size: 18px;\n\n\t/* Others */\n\t--box-shadow-card: 0px 4px 16px 0px var(--color-card-shadow);\n\t--opacity-placeholder: 0.5;\n}"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        340,
+        1100
+      ],
+      "id": "9d54635a-e76e-46f5-a618-a70641442c00",
+      "name": "On form submission",
+      "webhookId": "ae8eeab9-fff0-4254-90c6-8ac08866de58"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Choose content type'] }}",
+                    "rightValue": "Evergreen",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d7ad86a4-55df-46d5-8c60-e8cf2f5690d7"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Evergreen"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "30d18e9e-9548-4454-82f9-049af800e7a2",
+                    "leftValue": "={{ $json['Choose content type'] }}",
+                    "rightValue": "Controversial",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Controversial"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7ac8fe5e-8535-4284-b22f-6527da6721bc",
+                    "leftValue": "={{ $json['Choose content type'] }}",
+                    "rightValue": "Personal",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Personal"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        560,
+        1100
+      ],
+      "id": "317e367d-bf9c-4328-bafe-4fa35e65af63",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "amount": 4
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2360,
+        1300
+      ],
+      "id": "c0f4df88-2d7a-4089-9528-0b6ce33a2b93",
+      "name": "Wait5",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1760,
+        1300
+      ],
+      "id": "ecdbabae-1fb5-4b87-a963-506462fd74a4",
+      "name": "Wait4",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2360,
+        900
+      ],
+      "id": "e8e94a7f-f2cb-49c7-9af1-ec1f1232b11e",
+      "name": "Wait1",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1760,
+        900
+      ],
+      "id": "a33519ac-bd4b-485c-a0f4-85f7620fafa4",
+      "name": "Wait3",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2360,
+        1100
+      ],
+      "id": "004266e6-2abf-4d45-b5d8-e0bfb403212f",
+      "name": "Wait",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1760,
+        1100
+      ],
+      "id": "8b29ee3b-0163-4a36-993f-3df50be6ed53",
+      "name": "Wait2",
+      "webhookId": "1f4a212b-b42e-48af-bec1-a5a48cf4d346"
+    },
+    {
+      "parameters": {
+        "url": "https://api.linkedin.com/v2/userinfo",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        340,
+        380
+      ],
+      "id": "588ff486-f2f1-4933-831b-7bfce13aa6ab",
+      "name": "HTTP Request15",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.linkedin.com/v2/ugcPosts",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "linkedInOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"author\": \"urn:li:person:{{ $('HTTP Request15').item.json.body.sub }}\",\n  \"lifecycleState\": \"PUBLISHED\",\n  \"specificContent\": {\n    \"com.linkedin.ugc.ShareContent\": {\n      \"shareCommentary\": {\n        \"text\": {{ JSON.stringify($('Google Sheets1').item.json.Posts) }}\n      },\n      \"shareMediaCategory\": \"NONE\"\n    }\n  },\n  \"visibility\": {\n    \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n  }\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        560,
+        380
+      ],
+      "id": "76be8fbc-5c4b-4d8a-970e-d4f7201b5670",
+      "name": "HTTP Request16",
+      "credentials": {
+        "linkedInOAuth2Api": {
+          "id": "LpaoEOOHPOJ2215W",
+          "name": "LinkedIn account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "53f7c257-1d19-4a5b-b701-876a7d27772f",
+              "name": "base64",
+              "value": "={{ $json.data[0].b64_json }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2800,
+        900
+      ],
+      "id": "ea4de8ad-c1f9-4fd0-aadb-42500d13b6b2",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "base64",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        3020,
+        900
+      ],
+      "id": "5fc7bbb2-6810-4fb7-8709-2dc340ff5da6",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.together.xyz/v1/images/generations",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"black-forest-labs/FLUX.1-schnell-Free\",\n  \"prompt\": \"{{ $json.message.content.prompt }}\",\n  \"width\": 1024,\n  \"height\": 768,\n  \"steps\": 4,\n  \"n\": 1,\n  \"response_format\": \"b64_json\",\n  \"stop\": []\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2580,
+        900
+      ],
+      "id": "2c27a7d2-692a-4f3c-ace6-a5a4d6444f86",
+      "name": "HTTP Request17",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "53f7c257-1d19-4a5b-b701-876a7d27772f",
+              "name": "base64",
+              "value": "={{ $json.data[0].b64_json }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2800,
+        1100
+      ],
+      "id": "468a5f40-387a-4fdc-99ce-63d48bc8bbe4",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "base64",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        3020,
+        1100
+      ],
+      "id": "e8e4c81e-466c-4200-bf93-2122dbb03301",
+      "name": "Convert to File1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.together.xyz/v1/images/generations",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"black-forest-labs/FLUX.1-schnell-Free\",\n  \"prompt\": \"{{ $json.message.content.prompt }}\",\n  \"width\": 1024,\n  \"height\": 768,\n  \"steps\": 4,\n  \"n\": 1,\n  \"response_format\": \"b64_json\",\n  \"stop\": []\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2580,
+        1100
+      ],
+      "id": "51ad8a8a-3ec9-43dc-a2b7-a763bc5cc31e",
+      "name": "HTTP Request18",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "53f7c257-1d19-4a5b-b701-876a7d27772f",
+              "name": "base64",
+              "value": "={{ $json.data[0].b64_json }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2800,
+        1300
+      ],
+      "id": "14c1344e-5384-4320-a5a5-4211db658765",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "base64",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        3020,
+        1300
+      ],
+      "id": "e7ab5395-d153-432a-b983-db5733153f3b",
+      "name": "Convert to File2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.together.xyz/v1/images/generations",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"black-forest-labs/FLUX.1-schnell-Free\",\n  \"prompt\": \"{{ $json.message.content.prompt }}\",\n  \"width\": 1024,\n  \"height\": 768,\n  \"steps\": 4,\n  \"n\": 1,\n  \"response_format\": \"b64_json\",\n  \"stop\": []\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2580,
+        1300
+      ],
+      "id": "81c3d160-d272-4e2b-9399-05061a8ad09b",
+      "name": "HTTP Request19",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Controversial Post creator ": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "controversial topic": {
+      "main": [
+        [
+          {
+            "node": "Controversial Post creator ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Donwload Image1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Google Drive1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI1": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Donwload Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "evergreen topic": {
+      "main": [
+        [
+          {
+            "node": "Evergreen Post creator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "Wait3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Evergreen Post creator": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Donwload Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive2": {
+      "main": [
+        [
+          {
+            "node": "Google Drive3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Donwload Image": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request7": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request8": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "personal topic": {
+      "main": [
+        [
+          {
+            "node": "Personal Post creator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Personal Post creator": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request11": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request12": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Donwload Image2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive5": {
+      "main": [
+        [
+          {
+            "node": "Google Drive4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI2": {
+      "main": [
+        [
+          {
+            "node": "Wait5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request14": {
+      "main": [
+        [
+          {
+            "node": "Donwload Image2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "Wait4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "evergreen topic",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "controversial topic",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "personal topic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request19",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait4": {
+      "main": [
+        [
+          {
+            "node": "OpenAI2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait3": {
+      "main": [
+        [
+          {
+            "node": "OpenAI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request18",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "OpenAI1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request15": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request17": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Google Drive2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request18": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Convert to File2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request19": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File1": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File2": {
+      "main": [
+        [
+          {
+            "node": "Google Drive5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "da92fcec-cc2c-4935-a7a1-40f25b8c1d68",
+  "meta": {
+    "templateId": "self-building-ai-agent",
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5cc0498e4c4648fe5fcc14e1fba628e63e36e1dc801a3fe4ac7b2612c7e46c39"
+  },
+  "id": "hs68phUS29EExQi5",
+  "tags": []
+}
